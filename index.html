@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment form</title>
+  <link href="app.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>ZuriTraining Payment Form</h2>
+    <form>
+        <section id="accountDetails">
+            <h4>Account</h4>
+            <div class="input-group">
+              <div class="input-box">
+               <i class="fa fa-user icon"></i>
+                <input type="text" placeholder="full name" required class="name">
+             </div>
+             <div class="input-box">
+                <div class="input-group">
+                  <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="username" required class="name">
+                </div>
+            </div>
+            <div class="input-group">
+               <div class="input-box">
+                  <i class="fa fa-envelope"></i>
+                  <input type="email" placeholder="email" required class="name">
+               </div>
+            </div>
+        </section>
+     
+    
+      <section id="dob">
+        <div class="input-group">
+            <div class="input-box">
+              <h4>Date of birth</h4>
+              <input type="date" placeholder="DD" class="dob">
+             <!--
+                 <input type="date" placeholder="MM" class="dob">
+              <input type="date" placeholder="YYY" class="dob">
+             --> 
+            </div>
+            <div class="input-box">
+              <h4>Gender</h4>
+              <label for="b1" class="label">
+                Male
+                <input type="radio" name="gender" id="b1" class="radio">
+              </label>
+              <label for="b2" class="label">
+                Female
+                <input type="radio" name="gender" id="b2" class="radio">
+              </label>    
+            </div>
+          </div>
+      </section>
+
+      <section id="cardType">
+        <div class="input-group">
+            <div class="input-box">
+              <h4>Payment Details</h4>
+              <label for="bc1">
+                <span class="payment-type">
+                  <i class="fa fa-cc-visa"> Credit card</i>
+                </span>
+                <input type="radio" name="pay" id="bc1" checked class="radio">
+              </label>
+              
+              <label for="bc2">
+                <span class="payment-type">
+                  <i class="fa fa-cc-paypal"> Paypal</i>
+                </span>
+                <input type="radio" name="pay" id="bc2" class="radio">
+              </label>
+            </div>
+          </div>
+         
+      </section>
+      
+        <div class="input-group">
+            <div class="input-box">
+                <i class="fa fa-credit-card icon"></i>
+                <input type="tel" class="name" placeholder="card number" required>
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <i class="fa fa-user icon"></i>
+              <input type="tel" required placeholder="cvv">
+              
+            </div>
+                <div class="input-box" id="expiryPeriod">
+                    <select>
+                        <option value="Select"></option>
+                        <option>01 </option>
+                        <option>02 </option>
+                        <option>03 </option>
+                        <option>04 </option>
+                        <option>05 </option>
+                        <option>06 </option>
+                        <option>07 </option>
+                        <option>08 </option>
+                        <option>09 </option>
+                        <option>10 </option>
+                        <option>11 </option>
+                    </select>
+                    <select >
+                        <option value="Select"></option>
+                        <option value="">Jan</option>
+                        <option value="">Feb</option>
+                        <option value="">Mar</option>
+                        <option value="">Apr</option>
+                        <option value="">May</option>
+                        <option value="">Jun</option>
+                        <option value="">Jul</option>
+                        <option value="">Aug</option>
+                        <option value="">Sep</option>
+                        <option value="">Oct</option>
+                        <option value="">Nov</option>
+                        <option value="">Dec</option>
+                    </select>
+                    <select>
+                        <option value="Select"></option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        <option>2024</option>
+                        
+                    </select>
+                </div>
+          </div>
+     
+ 
+
+      <div class="input-group">
+        <div class="input-box">
+          <button type="submit">Pay Now</button>
+        </div>
+      </div>
+
+    </form>
+
+
+  </div>
+
+</body>
+
+</html>
